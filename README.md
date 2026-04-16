@@ -1,5 +1,9 @@
 # REGAT – Reconnaissance Automation Tool
 
+## Demo
+
+![REGAT Demo](regat.gif)
+
 REGAT is a Python-based CLI tool designed to automate **early-stage web application reconnaissance** for authorized security assessments. It consolidates multiple reconnaissance techniques into a unified workflow to identify exposed assets, misconfigurations, and attack surface indicators.
 
 > ⚠️ This tool is intended for **authorized use only** in environments where explicit permission has been granted.
