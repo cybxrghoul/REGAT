@@ -46,37 +46,37 @@ source venv/bin/activate
 pip install -e .
 ```
 ### 4. Usage
-Basic scan:
+**Basic scan:**
 ```bash
 regat example.com
 ```
 
-Custom thread count:
+**Custom thread count:**
 ```bash
 regat example.com --threads 30
 ```
 
-Custom timeout:
+**Custom timeout:**
 ```bash 
 regat example.com --timeout 3
 ```
 
-Custom subdomain wordlist:
+**Custom subdomain wordlist:**
 ```bash
 regat example.com --wordlist wordlists/subdomains.txt
 ```
 
-Custom endpoint wordlist:
+**Custom endpoint wordlist:**
 ```bash
 regat example.com --endpoint-wordlist wordlists/endpoints.txt
 ```
 
-JSON-only output:
+**JSON-only output:**
 ```bash
 regat example.com --json-only
 ```
 
-Version check:
+**Version check:**
 ```bash
 regat --version
 ```
