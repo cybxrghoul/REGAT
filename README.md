@@ -1,37 +1,33 @@
-# REGAT - Reconnaissance Automation Tool
+# REGAT – Reconnaissance Automation Tool
 
-REGAT is a Python-based CLI reconnaissance tool designed for **authorized web application security assessments**. It automates early-stage reconnaissance tasks such as DNS enumeration, HTTP security header analysis, public file inspection, multithreaded subdomain discovery, SSL/TLS certificate inspection, endpoint discovery, and structured reporting.
+REGAT is a Python-based CLI tool designed to automate **early-stage web application reconnaissance** for authorized security assessments. It consolidates multiple reconnaissance techniques into a unified workflow to identify exposed assets, misconfigurations, and attack surface indicators.
 
-> REGAT is intended for defensive security testing, learning, and authorized assessment workflows only.
+> ⚠️ This tool is intended for **authorized use only** in environments where explicit permission has been granted.
 
 ---
 
 ## Features
 
-- Basic domain reconnaissance
-- HTTP / HTTPS reachability checks
-- Security header analysis
-- DNS enumeration
-  - A
-  - AAAA
-  - MX
-  - NS
-  - TXT
-  - CNAME
-- `robots.txt` and `sitemap.xml` inspection
-- Multithreaded subdomain fuzzing
-- SSL/TLS certificate inspection
-- Common endpoint discovery
-- Exposure scoring
-- JSON report export
-- Installable CLI command:
-  ```bash
-  regat -h
+- Domain reconnaissance and reachability checks  
+- Security header analysis  
+- DNS enumeration (A, AAAA, MX, NS, TXT, CNAME)  
+- robots.txt and sitemap.xml analysis  
+- Multithreaded subdomain fuzzing  
+- SSL/TLS certificate inspection  
+- Endpoint discovery using customizable wordlists  
+- Heuristic-based exposure scoring  
+- Structured JSON report export  
+- Installable CLI tool (`regat -h`)  
 
-## Custom Wordlists
+---
 
-REGAT allows users to provide custom wordlists for subdomain and endpoint discovery.
+## Installation
 
-### Subdomains
+### 1. Clone the repository
 ```bash
-regat example.com --wordlist custom_subdomains.txt
+git clone https://github.com/cybxrghoul/REGAT.git
+cd REGAT
+```
+
+### 2. Create a virtual environment
+## Windows (Powershell)
