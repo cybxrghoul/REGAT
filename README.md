@@ -30,4 +30,8 @@ cd REGAT
 ```
 
 ### 2. Create a virtual environment
-## Windows (Powershell)
+Windows (Powershell):
+```bash
+python -m venv venv
+venv\Scripts\Activate
+```
