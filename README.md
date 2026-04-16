@@ -35,3 +35,48 @@ Windows (Powershell):
 python -m venv venv
 venv\Scripts\Activate
 ```
+Linux / macOS
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install the tool
+```bash
+pip install -e .
+```
+### 4. Usage
+Basic scan:
+```bash
+regat example.com
+```
+
+Custom thread count:
+```bash
+regat example.com --threads 30
+```
+
+Custom timeout:
+```bash 
+regat example.com --timeout 3
+```
+
+Custom subdomain wordlist:
+```bash
+regat example.com --wordlist wordlists/subdomains.txt
+```
+
+Custom endpoint wordlist:
+```bash
+regat example.com --endpoint-wordlist wordlists/endpoints.txt
+```
+
+JSON-only output:
+```bash
+regat example.com --json-only
+```
+
+Version check:
+```bash
+regat --version
+```
