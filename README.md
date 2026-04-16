@@ -21,6 +21,57 @@ REGAT is a Python-based CLI tool designed to automate **early-stage web applicat
 
 ---
 
+## Exposure Scoring
+
+REGAT provides an exposure score based on:
+- missing security controls
+- reconnaissance findings
+- misconfiguration indicators
+
+## Custom Wordlists
+Subdomain
+REGAT supports user-provided wordlists:
+```bash
+regat example.com --wordlist custom_subdomains.txt
+```
+Endpoints
+```bash
+regat example.com --endpoint-wordlist custom_endpoints.txt
+```
+## Project Structure 
+```bash
+REGAT/
+├── regat/
+│   ├── cli.py
+│   └── modules/
+├── wordlists/
+├── reports/
+├── pyproject.toml
+├── README.md
+├── requirements.txt
+```
+
+## Ethical Use
+
+This tool is intended for:
+
+- authorized penetration testing
+- defensive security research
+- learning and portfolio development
+
+⚠️ Do NOT use REGAT on:
+- systems you do not own
+- targets without explicit permission
+
+## Future Enhancements
+- Future Improvements
+- Technology fingerprinting
+- HTML report generation
+- Screenshot capture
+- Scan modes (quick/full/passive)
+- Config file support
+- Improved endpoint classification
+
 ## Installation
 
 ### 1. Clone the repository
@@ -80,3 +131,7 @@ regat example.com --json-only
 ```bash
 regat --version
 ```
+
+## Author
+**Shri Shiva Guru**
+Cybersecurity Enthusiast | Detection Engineering | AI Security
